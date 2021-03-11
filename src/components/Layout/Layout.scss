@@ -1,0 +1,85 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(68, 164, 84, .7);
+    
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 140px;
+            cursor: pointer;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            span {
+                color: #fff;
+                font-family: "Lato", sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        .routing {
+            height: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    color: #fff;
+                    height: 100%;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    padding: 0 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgba(26, 86, 50, 0.6);
+                    }
+                }
+
+                .authorization {
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    height: 70%;
+                    background-color: rgba(26, 86, 50, 0.6);
+                    margin-left: 15px;
+                    border-radius: 10px;
+                    transition: 0.8s;
+                    width: 100px;
+
+                    &:hover {
+                        background-color: rgba(68, 164, 84, .7);
+                        box-shadow: 0 0 10px 0 #1a5632 inset, 0 0 10px 4px #1a5632;
+                    }
+                }
+            }
+        }
+    }
+}
